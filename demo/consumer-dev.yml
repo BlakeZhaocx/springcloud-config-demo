@@ -11,7 +11,7 @@ eureka:
     fetch-registry: true # 默认是打开的
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka
-
+    registry-fetch-interval-seconds: 2
 # openfeign 开启 hystrix 的支持
 feign:
   hystrix:
