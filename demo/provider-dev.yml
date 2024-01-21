@@ -1,1 +1,13 @@
+server:
+  port: 8002
 
+spring:
+  application:
+    name: provider-server-1
+
+eureka:
+  client:
+    register-with-eureka: true # 默认是打开的
+    fetch-registry: true # 默认是打开的
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
