@@ -13,7 +13,7 @@ eureka:
       defaultZone: http://127.0.0.1:7001/eureka
 
 provider:
-  name: "provider-1"
+  name: "provider-2"
 
 
 # 用于支持spring actuator的配置热更新
