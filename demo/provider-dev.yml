@@ -11,3 +11,6 @@ eureka:
     fetch-registry: true # 默认是打开的
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka
+
+provider:
+  name: "provider-1"
