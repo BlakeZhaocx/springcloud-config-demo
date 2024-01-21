@@ -14,3 +14,14 @@ eureka:
 
 provider:
   name: "provider-1"
+
+
+# 用于支持spring actuator的配置热更新
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
