@@ -1,0 +1,19 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zuul-server
+
+eureka:
+  client:
+    register-with-eureka: true # 默认是打开的
+    fetch-registry: true # 默认是打开的
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+zuul:
+  ignored-services: "*"
+  routes:
+    consumer:
+      serviceId: consumer-server-1
+      path: /consumer/**
