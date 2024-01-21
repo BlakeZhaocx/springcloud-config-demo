@@ -13,6 +13,6 @@ eureka:
       defaultZone: http://127.0.0.1:7001/eureka
 
 # openfeign 开启 hystrix 的支持
-# feign:
-#  hystrix:
-#    enabled: true
+feign:
+  hystrix:
+    enabled: true
